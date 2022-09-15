@@ -30,7 +30,7 @@ const GuessNumber = ({randomicNumber, config}) => {
 
       <div className='prompt'>Guess the number between {config.lower} and {config.upper}</div>
       <div class='prompt'></div>
-      <div class='last-guess'>Last guess:(userGuessValue)?{userGuessValue}:none</div>      
+      <div class='last-guess'>Last guess:{(userGuessValue)?userGuessValue:'none'}</div>      
       <div className='status'>{messageSuggestion}</div>
       <label for='guess'>Guess:</label>
       <input type='text' name='guess' value={userGuessValue} onChange={handleChangeUserGuessValue}></input>
